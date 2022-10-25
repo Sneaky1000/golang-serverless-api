@@ -1,2 +1,2 @@
 # golang-serverless-api
-A serverless API using Amazon Web Services and Golang. The project has basic CRUD API functions.
+This is one of my first Golang projects using Amazon Web Services. It has the basic create, read, update, and delete functions of any CRUD API.
