@@ -3,13 +3,13 @@ package main
 import (
 	"os"
 
-	"github.com/Sneaky1000/golang-serverless-api/pkg/handlers"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface"
+	"github.com/user/Sneaky1000/golang-serverless-api/pkg/handlers"
 )
 
 var (
@@ -29,7 +29,7 @@ func main() {
 	lambda.Start(handler)
 }
 
-const tableName = "LambdaInGoUser"
+const tableName = "golang-serverless-api"
 
 // The "handler" function accepts a request and returns a response
 func handler(req events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {

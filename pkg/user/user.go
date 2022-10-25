@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/Sneaky1000/golang-serverless-api/pkg/validators"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface"
+	"github.com/user/Sneaky1000/golang-serverless-api/pkg/validators"
 )
 
 var (
